@@ -137,6 +137,7 @@ export const enum LexicographicOptions {
 	Upper = 'upper',
 	Lower = 'lower',
 	Unicode = 'unicode',
+	Filesystem = 'filesystem',
 }
 
 export interface ISortOrderConfiguration {

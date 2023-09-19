@@ -947,6 +947,10 @@ export class FileSorter implements ITreeSorter<ExplorerItem> {
 				compareFileNames = compareFileNamesUnicode;
 				compareFileExtensions = compareFileExtensionsUnicode;
 				break;
+			case 'filesystem':
+				compareFileNames = (one: string | null, other: string | null) => 0;
+				compareFileExtensions = (one: string | null, other: string | null) => 0;
+				break;
 			default:
 				// 'default'
 				compareFileNames = compareFileNamesDefault;
